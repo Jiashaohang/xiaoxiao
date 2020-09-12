@@ -1,0 +1,58 @@
+<van-search value="{{ value }}" input-align="center" placeholder="请输入搜索关键词" />
+<!-- 页面布局 -->
+<van-tabs swipeable color="#1296db">
+	<van-tab title="顾问">
+		<view class="area">
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>CV顾问</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>PS顾问</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>RL顾问</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="导师">
+		<view class="area">
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>CV导师</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>PS导师</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>RL导师</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+		</view>
+	</van-tab>
+	<van-tab title="总监">
+		<view class="area">
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>CV总监</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>PS总监</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+
+			<view bindtap="webview_ask" class="box" data-type="counselor.pdf">
+				<text>RL总监</text>
+				<view bindtap="webview_case" class="case">查看案例</view>
+			</view>
+		</view>
+	</van-tab>
+</van-tabs>

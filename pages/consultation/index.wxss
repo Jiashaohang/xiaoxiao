@@ -1,0 +1,81 @@
+.devp_loading{
+  width: 88vw;
+  padding: 20vh 0;
+  margin: 20vh auto;
+  border-radius: 10rpx;
+  font-size: 50rpx;
+  color: white;
+  text-align: center;
+  background-color: #3889FF;
+
+}
+.i-cell{
+  padding: 7px 15px;
+  color: #495060;
+  display: flex;
+}
+.i-cell-right{
+  display: inline;
+  margin-left: 2.5em;
+}
+.checkbox{
+  display: flex;
+  padding: 7px 15px;
+  color: #495060;
+}
+.checkbox-left{
+  width: 70%;
+}
+.checkbox-right{
+  /* width: 80; */
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 0.5em; */
+}
+.load{
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  top: 35vw;
+  left: 35vw;
+}
+.load_text{
+  position: absolute;
+  top: 66vw;
+  left: 35vw;
+}
+.area{
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  padding-top: 30rpx;
+}
+.box{
+  width: 90vw;
+  height: 10vh;
+  background-color: #ffffff;
+  display: flex;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+.box text{
+  /* color: #3889FF; */
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 10vh;
+  padding-left: 1em;
+}
+.case{
+  background-color: #1296DB;
+  width: 6em;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 2em;
+  position: absolute;
+  right: 3%;
+  bottom: 20%;
+  border-radius: 10rpx;
+  color: white;
+}

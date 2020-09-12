@@ -1,0 +1,126 @@
+<!-- 搜索框 -->
+<van-search value="{{ value }}" shape="round" background="#ffffff" placeholder="请输入搜索关键词" />
+	<!-- 咨询师列表 -->
+	<view class="list">
+		<view class="list-head">师资展示</view>
+		<view class="list-select">
+			<view data-tab="0" class="{{tab2==0 ? 'blue' : 'white'}}" bindtap="tab">全部</view>
+			<view data-tab="1" class="{{tab2==1 ? 'blue' : 'white'}}" bindtap="tab">金牌老师</view>
+			<view data-tab="2" class="{{tab2==2 ? 'blue' : 'white'}}" bindtap="tab">顾问老师</view>
+			<view data-tab="3" class="{{tab2==3 ? 'blue' : 'white'}}" bindtap="tab">专业老师</view>
+		</view>
+		<view class="list-body">
+		<block wx:if="{{tab2==0}}">
+			<!-- 老师列表循环开始 -->
+			<block>
+				<view class="list-card" bindtap="tapListCard" data-tid="{{item.tid}}">
+					<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img.jpg"></image></view>
+					<view class="right">
+						<view style="display:flex;">
+							<view style="font-size:38rpx;font-weight:600;">王老师</view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/sm.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/rl.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/xl.png"></image></view>
+						</view>
+						<view style="font-size:26rpx;font-weight:100;color:#6F758C;">金桥留学申请总监,清华大学经管学院本科,德国慕尼黑工业大...</view>
+						<view>
+							<view class="data">好评度:100%</view>
+							<view class="data">接单量:536</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="list-card" bindtap="tapListCard" data-tid="{{item.tid}}">
+					<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img2.png"></image></view>
+					<view class="right">
+						<view style="display:flex;">
+							<view style="font-size:38rpx;font-weight:600;">刘老师</view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/sm.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/rl.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/xl.png"></image></view>
+						</view>
+						<view style="font-size:26rpx;font-weight:100;color:#6F758C;">金桥留学申请总监,清华大学经管学院本科,德国慕尼黑工业大...</view>
+						<view>
+							<view class="data">好评度:100%</view>
+							<view class="data">接单量:536</view>
+						</view>
+					</view>
+				</view>
+
+				<view class="list-card" bindtap="tapListCard" data-tid="{{item.tid}}">
+					<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img3.jpg"></image></view>
+					<view class="right">
+						<view style="display:flex;">
+							<view style="font-size:38rpx;font-weight:600;">张老师</view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/sm.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/rl.png"></image></view>
+							<view class="badge"><image style="width:100%;height:100%;" src="/assets/images/xl.png"></image></view>
+						</view>
+						<view style="font-size:26rpx;font-weight:100;color:#6F758C;">金桥留学申请总监,清华大学经管学院本科,德国慕尼黑工业大...</view>
+						<view>
+							<view class="data">好评度:100%</view>
+							<view class="data">接单量:536</view>
+						</view>
+					</view>
+				</view>
+			</block>
+				<!-- 老师列表循环结束 -->
+			</block>
+		<block wx:if="{{tab2==1}}">
+			<!-- 老师列表循环开始 -->
+			<block wx:for="{{Tlist_in}}">
+				<view class="list-card" bindtap="tapListCard" data-tid="{{item.tid}}">
+					<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img.jpg"></image></view>
+					<view class="right">
+						<view style="font-size:38rpx;font-weight:600;">王其倩</view>
+						<view style="font-size:26rpx;font-weight:100;color:#6F758C;">国家二级心理咨询师</view>
+						<view style="font-size:26rpx;font-weight:100;color:#6F758C;">擅长:婚姻家庭、少儿成长、人际关系</view>
+						<view class="sign">
+							<view class="sign-item">恋爱</view>
+							<view class="sign-item">恋爱</view>
+							<view class="sign-item">恋爱</view>
+							<view class="sign-item">恋爱</view>
+						</view>
+					</view>
+				</view>
+			</block>
+				<!-- 老师列表循环结束 -->
+			</block>
+			<block wx:if="{{tab2==2}}">
+				<block wx:for="{{Tlist_out}}">
+					<view class="list-card" bindtap="tapListCard" data-Tid="{{item.Tid}}">
+						<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img.jpg"></image></view>
+						<view class="right">
+							<view style="font-size:38rpx;font-weight:600;">王其倩</view>
+							<view style="font-size:26rpx;font-weight:100;color:#6F758C;">国家二级心理咨询师</view>
+							<view style="font-size:26rpx;font-weight:100;color:#6F758C;">擅长:婚姻家庭、少儿成长、人际关系</view>
+							<view class="sign">
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+							</view>
+						</view>
+					</view>
+				</block>
+			</block>
+			<block wx:if="{{tab2==3}}">
+				<block wx:for="{{Tlist_team}}">
+					<view class="list-card" bindtap="tapListCard" data-Tid="{{item.Tid}}">
+						<view class="left"><image style="width:100%;height:100%;" src="/images/swiper/img.jpg"></image></view>
+						<view class="right">
+							<view style="font-size:38rpx;font-weight:600;">王其倩</view>
+							<view style="font-size:26rpx;font-weight:100;color:#6F758C;">国家二级心理咨询师</view>
+							<view style="font-size:26rpx;font-weight:100;color:#6F758C;">擅长:婚姻家庭、少儿成长、人际关系</view>
+							<view class="sign">
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+								<view class="sign-item">恋爱</view>
+							</view>
+						</view>
+					</view>
+				</block>
+			</block>
+		</view>
+	</view>
